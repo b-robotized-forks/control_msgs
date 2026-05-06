@@ -45,6 +45,7 @@ set(msg_files
 set(action_files
   action/ExecuteMotionPrimitiveSequence.action
   action/FollowJointTrajectory.action
+  action/GPIOCommand.action
   action/GPIOToolCommand.action
   action/GripperCommand.action
   action/JointTrajectory.action
