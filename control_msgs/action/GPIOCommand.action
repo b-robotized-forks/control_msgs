@@ -1,0 +1,18 @@
+# Goal
+string command_interface   # full name of the command interface (e.g. "lift/enable")
+float64 command_value      # value to send on the command interface
+string state_interface     # full name of the state interface to monitor (e.g. "lift/ready")
+float64 state_value        # expected value on the state interface for success
+float64 tolerance          # absolute difference between state_value and read state for goal success
+float64 timeout            # per-goal timeout in seconds; 0.0 means use controller default
+
+---
+
+# Result
+bool success               # true if the state interface reached the expected value within tolerance
+string message             # informational, e.g. for success or error messages
+
+---
+
+# Feedback
+float64 current_state      # current value on the monitored state interface
