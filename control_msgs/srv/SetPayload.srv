@@ -1,0 +1,16 @@
+uint8 LOAD_TYPE_UNKNOWN = 0
+uint8 LOAD_TYPE_END_EFFECTOR = 1
+uint8 LOAD_TYPE_PAYLOAD = 2
+
+uint8 load_type
+float32 mass 
+geometry_msgs/Vector3 center_of_gravity
+float64 ixx
+float64 iyy  
+float64 izz  
+float64 ixy  
+float64 ixz  
+float64 iyz
+builtin_interfaces/Duration timeout
+---
+bool success
