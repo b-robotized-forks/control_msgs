@@ -1,0 +1,4 @@
+# Used with the Cartesian Trajectory Generator in ros2_controllers for the /reset_axes service 
+string[] names # axes name 
+---
+bool ok
