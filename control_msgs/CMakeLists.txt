@@ -61,6 +61,7 @@ set(srv_files
   srv/SetOdometry.srv
   srv/SetGPIOToolConfig.srv
   srv/SetPayload.srv
+  srv/GetPayload.srv
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
